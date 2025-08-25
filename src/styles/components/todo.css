@@ -1,0 +1,71 @@
+.todo {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--base-padding);
+    width: 100%;
+    max-width: 404px;
+    min-height: 429px;
+    padding: var(--base-padding);
+    background-color: var(--color-white);
+    border: var(--border-main);
+    border-radius: var(--radius-8);
+    box-shadow: var(--box-shadow);
+}
+
+.todo__title {
+    text-align: center;
+    font-size: var(--fs-24px);
+    font-weight: var(--semi-bold);
+    line-height: 1.2;
+}
+
+.todo__form {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.todo__field {
+    width: 100%;
+}
+
+.todo__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    font-weight: var(--semi-bold);
+}
+
+.todo__delete-all-button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+        color: var(--color-gray-400);
+    }
+
+    &:not(.is-visible) {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.todo__list,
+.todo__empty-message {
+    &:empty {
+        display: none;
+    }
+}
+
+.todo__list {
+    --todo-list-row-gap: 0.5rem;
+
+    display: grid;
+    row-gap: var(--todo-list-row-gap);
+}
+
+.todo__empty-message {
+    text-align: center;
+    color: var(--color-gray-400);
+}
