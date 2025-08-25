@@ -1,0 +1,30 @@
+:root {
+    /* === Colors === */
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 0%);
+    --color-dark-100: hsl(0, 0%, 12%);
+    --color-dark-200: hsl(0, 0%, 17%);
+    --color-gray-100: hsl(0, 0%, 96%);
+    --color-gray-200: hsl(0, 0%, 85%);
+    --color-gray-300: hsl(0, 0%, 70%);
+    --color-gray-400: hsl(0, 0%, 46%);
+
+    /* === Font Family === */
+    --font-family-base: "Inter", sans-serif;
+
+    /* === Font Size === */
+    --fs-base: 16px;
+    --fs-24px: 1.5rem;
+
+    /* === Font Weight === */
+    --regular: 400;
+    --semi-bold: 600;
+
+    /* === Others === */
+    --border-main: 1px solid var(--color-gray-200);
+    --radius-8: 8px;
+    --box-shadow: 0 4px 4px -4px rgba(12, 12, 13, 0.05), 0 16px 32px -4px rgba(12, 12, 13, 0.1);
+    --input-height: 40px;
+    --transition-duration: 0.2s;
+    --base-padding: 24px;
+}
